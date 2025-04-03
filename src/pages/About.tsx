@@ -1,4 +1,4 @@
-import about from "../../public/about.jpg"
+import about from "/about.jpg"
 import Typed from "typed.js";
 import { useEffect, useRef, useState } from "react";
 import AboutModal from "../components/AboutModal";
@@ -33,7 +33,7 @@ export const About = () => {
         <div className="w-full " id="about">
             <div className="bg-[#212529] flex items-center flex-col relative font-poppins w-full  text-white justify-center mt-[-18rem] lg:flex-row px-10 py-32 gap-20 h-auto">
                 <div className="w-1/3">
-                    <img src={about} className="h-[70vh] w-full rounded-full" />
+                    <img src={about} className="h-[50vh] w-[50vh] rounded-full" />
                 </div>
                 <div className="w-2/4">
                     <h1 className="text-5xl uppercase font-medium pb-6">solange <span className="text-[#CA8455]">ihirwe</span></h1>

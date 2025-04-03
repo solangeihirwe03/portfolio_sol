@@ -8,22 +8,11 @@ const projects = [
     },
     {
         id: 2,
-        name: "Rock, Paper, Scissor",
-        description: "Game",
-        imageUrl: "RockPaper.jpg",
-    },
-    {
-        id: 3,
-        name: "Weather App",
-        description: "Weather Watch built with React.js and TypeScript that provides weather forecasts and related information.",
-        imageUrl: "weatherApp.jpeg",
-    },
-    {
-        id: 4,
-        name: "Agrisales",
-        description: "Design",
-        imageUrl: "Agrisales.jpg",
-    },
+        name: "AspireTECH Articles Platform",
+        description: "A full-featured article publishing platform built with React and TypeScript.",
+        imageUrl: "articles.png",
+        link:"https://articles-b3yafef3e-solange-duhimbaze-ihirwes-projects.vercel.app/"
+    }
 ];
 
 export default projects
