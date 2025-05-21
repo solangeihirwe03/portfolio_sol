@@ -12,6 +12,12 @@ const projects = [
         description: "A full-featured article publishing platform built with React and TypeScript.",
         imageUrl: "articles.png",
         link:"https://articles-b3yafef3e-solange-duhimbaze-ihirwes-projects.vercel.app/"
+    },
+    {
+        id: 3,
+        name: "ecommerce ninja platform",
+        description: "Our e-commerce web application server, developed by Team Ninjas, facilitates smooth online shopping with features like user authentication, product cataloging, and secure payments. It's built to enhance the user experience with high performance and reliability. Suitable for any online marketplace looking to grow.",
+        imageUrl: "ecommerce.png"
     }
 ];
 
