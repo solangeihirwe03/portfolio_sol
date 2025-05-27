@@ -10,7 +10,7 @@ import Services from "./pages/services";
 function App() {
 
   return (
-    <>
+    <div className="font-poppins">
       <Header/>
       <Home/>
       <About/>
@@ -18,7 +18,7 @@ function App() {
       {/* <Projects/>
       <Contact/> */}
       <Footer/>
-    </>
+    </div>
   )
 }
 

@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 const Footer = () => {
     const year = new Date().getFullYear();
     return (
-        <div className='bg-[rgb(19,19,19)] md:h-56 text-white py-8 2xl:h-[30vh]'>
+        <div className='bg-[rgb(19,19,19)] md:h-auto text-white py-8 2xl:h-[30vh]'>
             <div className="gap-10 flex w-full flex-col md:flex-row justify-evenly px-10 lg:px-20 md:items-center 2xl:justify-between 2xl:px-40">
                 <div>
                     <h3 className="text-xl font-semibold mb-4 text-center md:text-lg md:text-start 2xl:text-4xl">Quick Links</h3>

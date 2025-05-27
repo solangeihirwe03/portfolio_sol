@@ -11,7 +11,7 @@ import { Link } from "react-scroll";
 
 export const SocialMdIcn = () => {
     return (
-        <div className="flex gap-2 text-gray-300 py-6 absolute right-20 md:relative md:right-2">
+        <div className="flex gap-2 text-gray-300 py-6 items-center justify-center ">
             <a href="https://www.instagram.com/__ihirwe___14/" target="_blank">
                 <FaInstagram fontSize={24} />
             </a>

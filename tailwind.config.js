@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         poppins: [ "Poppins", 'sans-serif'],
+        openSans: ["Open Sans", "sans-serif"]
       },
       backgroundImage: {
         "myBackground": `url("/backgroundImg.jpg")`, // Replace with your image name
