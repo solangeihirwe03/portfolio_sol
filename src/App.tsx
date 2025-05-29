@@ -10,13 +10,13 @@ import Services from "./pages/services";
 function App() {
 
   return (
-    <div className="font-poppins">
+    <div className="font-poppins text-[#383838]">
       <Header/>
       <Home/>
       <About/>
       <Services/>
-      {/* <Projects/>
-      <Contact/> */}
+      <Projects/>
+      {/* <Contact/> */}
       <Footer/>
     </div>
   )

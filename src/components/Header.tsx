@@ -47,7 +47,7 @@ export const Header = () => {
                 <img
                     src="logo.jpg"
                     alt="logo"
-                    className="w-12 h-12 rounded-full"
+                    className="w-12 h-12 rounded-full cursor-pointer"
                 />
             </Link>
             <nav className="md:flex text-lg hidden">
@@ -55,7 +55,7 @@ export const Header = () => {
                     to="home"
                     smooth={true}
                     duration={500}
-                    className="hover:text-[#0c645b] text-[#383838] hover:font-semibold w-20"
+                    className="hover:text-[#0c645b] text-[#383838] hover:font-semibold w-20 cursor-pointer"
                 >
                     Home
                 </Link>
@@ -63,7 +63,7 @@ export const Header = () => {
                     to="about"
                     smooth={true}
                     duration={500}
-                    className="hover:text-[#0c645b] text-[#383838] hover:font-semibold w-20"
+                    className="hover:text-[#0c645b] text-[#383838] hover:font-semibold w-20 cursor-pointer"
                 >
                     About
                 </Link>
@@ -71,7 +71,7 @@ export const Header = () => {
                     to="services"
                     smooth={true}
                     duration={500}
-                    className="hover:text-[#0c645b] text-[#383838] hover:font-semibold w-20"
+                    className="hover:text-[#0c645b] text-[#383838] hover:font-semibold w-20 cursor-pointer"
                 >
                     Services
                 </Link>
@@ -79,7 +79,7 @@ export const Header = () => {
                     to="projects"
                     smooth={true}
                     duration={500}
-                    className="hover:text-[#0c645b] text-[#383838] hover:font-semibold w-20"
+                    className="hover:text-[#0c645b] text-[#383838] hover:font-semibold w-20 cursor-pointer"
                 >
                     Projects
                 </Link>
@@ -87,7 +87,7 @@ export const Header = () => {
                     to="contacts"
                     smooth={true}
                     duration={500}
-                    className="hover:text-[#0c645b] text-[#383838] hover:font-semibold w-20"
+                    className="hover:text-[#0c645b] text-[#383838] hover:font-semibold w-20 cursor-pointer"
                 >
                     Contact
                 </Link>

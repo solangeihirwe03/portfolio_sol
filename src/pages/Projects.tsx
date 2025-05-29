@@ -1,6 +1,7 @@
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6"
 import projects from "../components/project"
 import { useState } from "react";
+import { Element } from "react-scroll";
 
 export const Projects = () => {
     const [Projects, setProjects] = useState(projects)
@@ -19,8 +20,8 @@ export const Projects = () => {
         }
     };
     return (
-        <div className="w-full" id="projects">
-            <div className="relative flex items-center flex-col w-full text-white">
+        <Element name="projects" className="w-full" id="projects">
+            <div className="relative flex items-center flex-col w-full">
                 <div className="">
                     <h1 className="font-semibold text-4xl text-[#F4A169] py-8">PROJECTS</h1>
                 </div>
@@ -57,6 +58,6 @@ export const Projects = () => {
                     </button>
                 </div>
             </div>
-        </div>
+        </Element>
     )
 }
