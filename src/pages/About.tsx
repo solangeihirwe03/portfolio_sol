@@ -48,14 +48,16 @@ export const About = () => {
                         <div className="flex gap-2 font-openSans font-bold text-[12px] mb-8 justify-center">
                             <Link
                                 to="contacts"
-                                className="bg-[#0c645b] text-white border-[1px] uppercase px-4 py-2 w-40 text-center h-8"
+                                smooth={true}
+                                duration={500}
+                                className="bg-[#0c645b] text-white border-[1px] uppercase px-4 py-2 w-40 text-center h-8 cursor-pointer"
                             >
                                 Hire me
                             </Link>
                             <a
                                 href="/sol_cv.pdf"
                                 download="CV.pdf"
-                                className="text-[#0c645b] border-[#0c645b] border-[1px] uppercase text-center px-4 py-2 h-8 w-40 "
+                                className="text-[#0c645b] border-[#0c645b] border-[1px] uppercase text-center px-4 py-2 h-8 w-40 cursor-pointer "
                             >
                                 Download CV
                             </a>

@@ -58,25 +58,25 @@ export const Contact = () => {
             style={{ backgroundImage: "url('/contact_background.jpg')" }}
         >
             <div className="absolute inset-0 bg-black opacity-50"></div>
-            <div className=" w-full flex items-center flex-col justify-center relative font-poppins py-6 text-white lg:h-[80vh] z-10 ">
+            <div className=" w-full flex md:items-center flex-col justify-center relative font-poppins py-6 text-white lg:h-[80vh] z-10 ">
                 <div className="relative mb-5 py-7 w-full flex justify-center">
                     <h1 className="font-bold md:text-8xl text-6xl text-[#53817c]">CONTACT</h1>
                     <h3 className="md:left-52 lg:left-[36rem] left-16 absolute top-16 md:text-4xl text-3xl lg:pl-28">Get in Touch</h3>
                 </div>
-                <div className="flex gap-6 px-24 flex-col-reverse lg:flex-row w-full ">
-                    <div className="flex flex-col gap-6 lg:w-[40%] w-full px-3 lg:text-xl">
-                        <h2>ADDRESS</h2>
-                        <p className="flex items-center">
-                            <FaMapLocation fontSize={20} className="text-[#53817c]" />{" "}
+                <div className="flex gap-6 px-4 md:px-24 flex-col  lg:flex-row w-full ">
+                    <div className="flex flex-col gap-6 lg:w-[40%] w-full px-3 lg:text-xl items-center lg:items-start">
+                        <h2 className="font-semibold md:text-3xl">ADDRESS</h2>
+                        <p className="flex md:items-center text-sm md:text-xl">
+                            <FaMapLocation fontSize={20} className="text-[#53817c]" />
                             <span>&nbsp; Kigali/Rwanda</span>
                         </p>
-                        <p className="flex items-center">
-                            <FaPhone fontSize={20} className="text-[#53817c]" />{" "}
+                        <p className="flex items-center text-sm md:text-xl">
+                            <FaPhone fontSize={20} className="text-[#53817c]" />
                             <span>&nbsp; +250787113254</span>
                         </p>
-                        <p className="flex items-center">
-                            <FaEnvelope fontSize={20} className="text-[#53817c]" />{" "}
-                            <span>&nbsp; solangeduhimbazeihirwe@gmail.com</span>
+                        <p className="flex items-center text-sm md:text-xl">
+                            <FaEnvelope fontSize={20} className="text-[#53817c]" />
+                            <span>&nbsp; solangeihirwe@gmail.com</span>
                         </p>
                         <div className="pt-4 flex flex-col items-center md:items-start">
                             <h1 className="text-xl font-semibold pb-3">FOLLOW ME</h1>
@@ -124,7 +124,7 @@ export const Contact = () => {
                             <button
                                 onSubmit={handlesubmit}
                                 type="submit"
-                                className="px-6 py-3 bg-[#53817c] lg:w-[18vw] rounded-3xl font-medium text-xl"
+                                className="px-6 py-3 bg-[#53817c] xl:w-[18vw] rounded-3xl font-medium md:text-xl"
                             >
                                 Send Message
                             </button>
