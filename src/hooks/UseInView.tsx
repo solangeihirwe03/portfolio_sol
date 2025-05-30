@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 
 export const useInView = ()=>{
-    const ref = useRef(null)
+    const ref = useRef<HTMLElement | null>(null);
     const [isIntersecting, setIsIntersecting] = useState(false)
 
     useEffect(()=>{
@@ -9,9 +9,18 @@ export const useInView = ()=>{
             ([entry])=> setIsIntersecting(entry.isIntersecting),
             {threshold: 0.1}
         );
+        const currentElement = ref.current;
 
-        if(ref.current) observer.observe(ref.current);
-        return ()=> observer.disconnect();
+        if (currentElement) {
+          observer.observe(currentElement);
+        }
+    
+        return () => {
+          if (currentElement) {
+            observer.unobserve(currentElement);
+          }
+          observer.disconnect();
+        };
     }, []);
 
     return [ref, isIntersecting] as const

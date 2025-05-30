@@ -119,6 +119,7 @@ export const Contact = () => {
                             <textarea
                                 placeholder="Tell us more about your needs...."
                                 value={contact.message}
+                                onChange={(e:any) => setMessage(e.target.value)}
                                 className="bg-[#232a31] py-4 px-6 w-full h-24 outline-none"
                             ></textarea>
                             <button

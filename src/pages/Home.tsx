@@ -12,7 +12,7 @@ export const Home = () => {
             <div className="absolute inset-0 bg-black/70 z-0"></div>
             <div className="flex flex-col items-center justify-center  lg:w-[75vw] z-50">
                 <h1 className="py-4 text-2xl 2xl:text-6xl">SOLANGE~D~IHIRWE</h1>
-                <p className="xl:w-[55vw] pb-5 2xl:text-4xl 2xl:leading-relaxed">
+                <p className="xl:w-[55vw] pb-5 text-sm 2xl:text-4xl 2xl:leading-relaxed">
                     Welcome to the future of web application! Let's craft your dream web app together. Experience the difference
                     between elegant design and functionality we're here to guide you every step of the way
                 </p>
