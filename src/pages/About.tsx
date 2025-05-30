@@ -30,7 +30,7 @@ export const About = () => {
     return (
         <Element name="about" className="w-full px-4 lg:px-20" id="about">
             <div className="font-poppins py-8 lg:py-4 2xl:py-32">
-                <h1 className="uppercase text-xl font-semibold pb-4 text-[#0c645b] md:pb-2 2xl:text-6xl md:text-center">About me</h1>
+                <h1 className="">About me</h1>
                 <blockquote
                     className="italic text-[#7f8c8d] text-sm text-center pb-4 lg:text-md 2xl:text-2xl"
                 >
@@ -42,7 +42,7 @@ export const About = () => {
                         <p className="text-sm leading-relaxed md:text-[15px] lg:text-[17px] xl:text-xl pb-6 lg:pb-10 2xl:text-4xl 2xl:leading-relaxed">
                             Full-Stack Developer with passion for building innovative web applications. Willing to leverage my current skills and
                             continuously learn new technologies to excel in the field. Possess strong work ethic and the ability to thrive in fast-paced
-                            environments.
+                            environments.uppercase text-xl font-semibold pb-4 text-[#0c645b] md:pb-2 2xl:text-6xl md:text-center
                         </p>
                         <SocialMdIcn />
                         <div className="flex gap-2 font-openSans font-bold text-[12px] mb-8 justify-center">
