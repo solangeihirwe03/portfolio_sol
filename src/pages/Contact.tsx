@@ -6,6 +6,7 @@ import { Response } from "../components/Response";
 import { useState } from "react";
 import axios from "axios";
 import { ChangeEvent } from "react";
+import { Element } from "react-scroll";
 
 
 export const Contact = () => {
@@ -31,44 +32,50 @@ export const Contact = () => {
             setMessage({ type: "error", content: "provide valid email" });
             return;
         }
-       axios.post("https://backend-mybrand-solange.onrender.com/messages/createMessage", contact)
-       .then(response=>{
-        console.log(response.data)
-        setMessage({
-            type: "success",
-            content: response.data
-        })
+        axios.post("https://backend-mybrand-solange.onrender.com/messages/createMessage", contact)
+            .then(response => {
+                console.log(response.data)
+                setMessage({
+                    type: "success",
+                    content: response.data
+                })
 
-        setContact({name: "", email: "", message: ""})
-       }) 
-       .catch(err=>{
-        console.log(err)
-        setMessage({
-            type: "error",
-            content: "Error adding contact"
-        })
-       })
+                setContact({ name: "", email: "", message: "" })
+            })
+            .catch(err => {
+                console.log(err)
+                setMessage({
+                    type: "error",
+                    content: "Error adding contact"
+                })
+            })
     }
     return (
-        <div className="w-full flex" id="contact">
-            <div className="bg-[#212529] w-full flex items-center flex-col justify-center relative font-poppins py-6 text-white lg:h-[100vh] ">
+        <Element
+            name="contacts"
+            className="bg-fixed bg-center bg-no-repeat bg-cover bg-opacity-50 relative"
+            id="contact"
+            style={{ backgroundImage: "url('/contact_background.jpg')" }}
+        >
+            <div className="absolute inset-0 bg-black opacity-50"></div>
+            <div className=" w-full flex items-center flex-col justify-center relative font-poppins py-6 text-white lg:h-[80vh] z-10 ">
                 <div className="relative mb-5 py-7 w-full flex justify-center">
-                    <h1 className="font-bold md:text-8xl text-6xl text-[#353535]">CONTACT</h1>
+                    <h1 className="font-bold md:text-8xl text-6xl text-[#53817c]">CONTACT</h1>
                     <h3 className="md:left-52 lg:left-[36rem] left-16 absolute top-16 md:text-4xl text-3xl lg:pl-28">Get in Touch</h3>
                 </div>
-                <div className="flex gap-6 px-24 flex-col-reverse lg:flex-row w-full">
+                <div className="flex gap-6 px-24 flex-col-reverse lg:flex-row w-full ">
                     <div className="flex flex-col gap-6 lg:w-[40%] w-full px-3 lg:text-xl">
                         <h2>ADDRESS</h2>
                         <p className="flex items-center">
-                            <FaMapLocation fontSize={20} className="text-[#F4A169]" />{" "}
+                            <FaMapLocation fontSize={20} className="text-[#53817c]" />{" "}
                             <span>&nbsp; Kigali/Rwanda</span>
                         </p>
                         <p className="flex items-center">
-                            <FaPhone fontSize={20} className="text-[#F4A169]" />{" "}
-                            <span>&nbsp; +2507113254</span>
+                            <FaPhone fontSize={20} className="text-[#53817c]" />{" "}
+                            <span>&nbsp; +250787113254</span>
                         </p>
                         <p className="flex items-center">
-                            <FaEnvelope fontSize={20} className="text-[#F4A169]" />{" "}
+                            <FaEnvelope fontSize={20} className="text-[#53817c]" />{" "}
                             <span>&nbsp; solangeduhimbazeihirwe@gmail.com</span>
                         </p>
                         <div className="pt-4 flex flex-col items-center md:items-start">
@@ -100,24 +107,24 @@ export const Contact = () => {
                                 placeholder="Name"
                                 value={contact.name}
                                 onChange={handleinputs}
-                                className="bg-[#232a31] py-4 px-6 w-full"
+                                className="bg-[#232a31] py-4 px-6 w-full outline-none"
                             />
                             <input
                                 type="email"
                                 placeholder="Email"
                                 value={contact.email}
                                 onChange={handleinputs}
-                                className="bg-[#232a31] py-4 px-6 w-full"
+                                className="bg-[#232a31] py-4 px-6 w-full outline-none"
                             />
                             <textarea
                                 placeholder="Tell us more about your needs...."
                                 value={contact.message}
-                                className="bg-[#232a31] py-4 px-6 w-full h-24"
+                                className="bg-[#232a31] py-4 px-6 w-full h-24 outline-none"
                             ></textarea>
                             <button
                                 onSubmit={handlesubmit}
                                 type="submit"
-                                className="px-6 py-3 bg-[#F4A169] lg:w-[18vw] rounded-3xl font-medium text-xl"
+                                className="px-6 py-3 bg-[#53817c] lg:w-[18vw] rounded-3xl font-medium text-xl"
                             >
                                 Send Message
                             </button>
@@ -126,6 +133,6 @@ export const Contact = () => {
                     <Response type={message.type} content={message.content} />
                 </div>
             </div>
-        </div>
+        </Element>
     )
 }

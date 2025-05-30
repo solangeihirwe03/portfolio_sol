@@ -30,7 +30,7 @@ export const About = () => {
     return (
         <Element name="about" className="w-full px-4 lg:px-20" id="about">
             <div className="font-poppins py-8 lg:py-4 2xl:py-32">
-                <h1 className="">About me</h1>
+                <h1 className="uppercase text-xl font-semibold pb-4 text-[#0c645b] md:pb-3 2xl:text-6xl md:text-center">About me</h1>
                 <blockquote
                     className="italic text-[#7f8c8d] text-sm text-center pb-4 lg:text-md 2xl:text-2xl"
                 >
