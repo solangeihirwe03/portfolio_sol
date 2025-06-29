@@ -42,7 +42,7 @@ export const About = () => {
                         <p className="text-sm leading-relaxed md:text-[15px] lg:text-[17px] xl:text-xl pb-6 lg:pb-10 2xl:text-4xl 2xl:leading-relaxed">
                             Full-Stack Developer with passion for building innovative web applications. Willing to leverage my current skills and
                             continuously learn new technologies to excel in the field. Possess strong work ethic and the ability to thrive in fast-paced
-                            environments.uppercase text-xl font-semibold pb-4 text-[#0c645b] md:pb-2 2xl:text-6xl md:text-center
+                            environments.
                         </p>
                         <SocialMdIcn />
                         <div className="flex gap-2 font-openSans font-bold text-[12px] mb-8 justify-center">
