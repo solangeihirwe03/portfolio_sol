@@ -42,7 +42,7 @@ export const About = () => {
                         <p className="text-sm leading-relaxed md:text-[15px] lg:text-[17px] xl:text-xl pb-6 lg:pb-10 2xl:text-4xl 2xl:leading-relaxed">
                             Full-Stack Developer with passion for building innovative web applications. Willing to leverage my current skills and
                             continuously learn new technologies to excel in the field. Possess strong work ethic and the ability to thrive in fast-paced
-                            environments.uppercase text-xl font-semibold pb-4 text-[#0c645b] md:pb-2 2xl:text-6xl md:text-center
+                            environments.
                         </p>
                         <SocialMdIcn />
                         <div className="flex gap-2 font-openSans font-bold text-[12px] mb-8 justify-center">
@@ -147,6 +147,16 @@ export const About = () => {
                                 <div className="w-[85%] bg-[#0c645b] h-1 md:h-2 lg:h-1"></div>
                             </div>
                         </div>
+
+                        <div className="lg:w-[37vw]">
+                            <div className="flex justify-between pb-1 text-[#fff]">
+                                <p>Next JS</p>
+                                <p>85%</p>
+                            </div>
+                            <div className="lg:w-[37vw] h-1 md:h-2 bg-[#fff] lg:h-1">
+                                <div className="w-[85%] bg-[#0c645b] h-1 md:h-2 lg:h-1"></div>
+                            </div>
+                        </div>
                         <div className="lg:w-[37vw]">
                             <div className="flex justify-between pb-1 text-[#fff]">
                                 <p>HTML/CSS</p>
@@ -183,6 +193,17 @@ export const About = () => {
                                 <div className="w-[80%] bg-[#0c645b] h-1 md:h-2 lg:h-1"></div>
                             </div>
                         </div>
+
+                        <div className="lg:w-[37vw]">
+                            <div className="flex justify-between pb-1 text-[##fff]">
+                                <p>Python</p>
+                                <p>90%</p>
+                            </div>
+                            <div className="lg:w-[37vw] h-1 bg-[#fff] md:h-2 lg:h-1">
+                                <div className="w-[90%] bg-[#0c645b] h-1 md:h-2 lg:h-1"></div>
+                            </div>
+                        </div>
+
                         <div className="lg:w-[37vw]">
                             <div className="flex justify-between pb-1 text-[#fff]">
                                 <p>TypeScript</p>
