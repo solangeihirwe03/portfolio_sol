@@ -11,7 +11,7 @@ const projects = [
         name: "AspireTECH Articles Platform",
         description: "A full-featured article publishing platform built with React and TypeScript.",
         imageUrl: "articles.png",
-        link:"https://articles-b3yafef3e-solange-duhimbaze-ihirwes-projects.vercel.app/"
+        link:"https://articles-gray-rho.vercel.app/"
     },
     {
         id: 3,
